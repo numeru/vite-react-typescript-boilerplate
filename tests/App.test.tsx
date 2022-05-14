@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import App from '../src/App';
+import App from '@/App';
 
 describe('App Test', () => {
 	beforeEach(() => {
@@ -7,6 +7,6 @@ describe('App Test', () => {
 	});
 
 	it('Show App', () => {
-		expect(screen.getByText('App')).toBeInTheDocument();
+		expect(screen.getByText('App'));
 	});
 });
